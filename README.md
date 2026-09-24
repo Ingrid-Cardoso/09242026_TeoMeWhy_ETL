@@ -86,101 +86,23 @@ Construir um pipeline de dados containerizado, orquestrado pelo Airflow, com val
 
 data-engineering-pipeline/
 
-│
+├── docker-compose.yml
 
-├── docker/
+├── .env
 
-│   ├── airflow/
+├── .gitignore
 
-│   │   └── Dockerfile
-
-│   │
-
-│   ├── python/
-
-│   │   └── Dockerfile
-
-│   │
-
-│   └── postgres/
-
-│       └── init.sql
-
-│
+├── requirements.txt
 
 ├── dags/
 
-│   └── etl_pipeline.py
-
-│
-
 ├── src/
-
-│   ├── extract/
-
-│   │   └── extract.py
-
-│   │
-
-│   ├── transform/
-
-│   │   └── transform.py
-
-│   │
-
-│   └── load/
-
-│       └── load.py
-
-│
 
 ├── great_expectations/
 
-│   ├── expectations/
-
-│   └── checkpoints/
-
-│
-
 ├── dbt/
 
-│   ├── models/
-
-│   │   ├── staging/
-
-│   │   ├── intermediate/
-
-│   │   └── marts/
-
-│   │
-
-│   ├── tests/
-
-│   ├── macros/
-
-│   ├── seeds/
-
-│   ├── snapshots/
-
-│   └── dbt_project.yml
-
-│
-
-├── sql/
-
-│   └── analysis/
-
-│
-
-├── tests/
-
-│   └── test_pipeline.py
-
-│
-
-├── docker-compose.yml
-
-├── requirements.txt
+└── sql/
 
 ## Estrutura PostgreSQL
 
@@ -323,5 +245,7 @@ CSV / API / Kaggle
 ☐ Data quality report
 ☐ dbt lineage
 ☐ Exemplos SQL
+
+https://chatgpt.com/share/6ab5620f-4048-83e9-892b-d59d26d933be
 ☐ Screenshots
 ☐ Como reproduzir
