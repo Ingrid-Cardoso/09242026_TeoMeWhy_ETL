@@ -218,13 +218,13 @@ PostgreSQL
 
 └── analytics
 
-    ├── dim_users
+|    ├── dim_users
     
-    ├── dim_courses
+|    ├── dim_courses
     
-    ├── fact_history
+|    ├── fact_history
     
-    └── ...
+|    └── ...
     
 ├── .env
 
