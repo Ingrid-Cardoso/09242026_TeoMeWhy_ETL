@@ -85,81 +85,151 @@ Construir um pipeline de dados containerizado, orquestrado pelo Airflow, com val
 ## Estrutura do projeto
 
 data-engineering-pipeline/
+
 │
+
 ├── docker/
+
 │   ├── airflow/
+
 │   │   └── Dockerfile
+
 │   │
+
 │   ├── python/
+
 │   │   └── Dockerfile
+
 │   │
+
 │   └── postgres/
+
 │       └── init.sql
+
 │
+
 ├── dags/
+
 │   └── etl_pipeline.py
+
 │
+
 ├── src/
+
 │   ├── extract/
+
 │   │   └── extract.py
+
 │   │
+
 │   ├── transform/
+
 │   │   └── transform.py
+
 │   │
+
 │   └── load/
+
 │       └── load.py
+
 │
+
 ├── great_expectations/
+
 │   ├── expectations/
+
 │   └── checkpoints/
+
 │
+
 ├── dbt/
+
 │   ├── models/
+
 │   │   ├── staging/
+
 │   │   ├── intermediate/
+
 │   │   └── marts/
+
 │   │
+
 │   ├── tests/
+
 │   ├── macros/
+
 │   ├── seeds/
+
 │   ├── snapshots/
+
 │   └── dbt_project.yml
+
 │
+
 ├── sql/
+
 │   └── analysis/
+
 │
+
 ├── tests/
+
 │   └── test_pipeline.py
+
 │
+
 ├── docker-compose.yml
+
 ├── requirements.txt
 
 ## Estrutura PostgreSQL
 
 PostgreSQL
+
 │
+
 ├── raw
-│   ├── listings
-│   ├── calendar
-│   ├── reviews
+
+│   ├── users
+
+│   ├── courses
+
+│   ├── episodes
+
 │   └── ...
+
 │
+
 ├── staging
-│   ├── stg_listings
-│   ├── stg_calendar
-│   └── stg_reviews
+
+│   ├── stg_usesrs
+
+│   ├── stg_courses
+
+│   └── stg_episodes
+
 │
+
 ├── intermediate
+
 │   └── ...
+
 │
+
 └── analytics
-    ├── dim_listing
-    ├── dim_host
-    ├── fact_calendar
-    ├── fact_review
+
+    ├── dim_users
+    
+    ├── dim_courses
+    
+    ├── fact_history
+    
     └── ...
+    
 ├── .env
+
 ├── .gitignore
+
 └── README.md
 
 
